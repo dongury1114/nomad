@@ -1,6 +1,15 @@
-var gugu = prompt("구구단 몇 단을 원하세요");
-  if(!isNaN(gugu)){
-    for(var i = 1; i<10; i++){
-      document.write(gugu+"x"+i+"="+(i*gugu)+"</br>");
-    }
-  }
+const age = parseInt(prompt("How old are you?"));
+
+if(isNaN(age) || age < 0 ){
+  console.log("please wrie a number");
+} else if(age < 18 ){
+  console.log("You are too young.");
+} else if(age >=18 && age <= 50){
+  console.log("GAZZZA");
+   }
+   else if(age ==100){
+  console.log("GAZZZA");
+  
+} else{
+  console.log("you can't drink");
+}
